@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .entry {
+            padding: 10px;
+            background-color: rgb(243, 243, 243);
+        }
+
+        .maindiv {
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .column1 {
+            display: grid;
+            grid-template-rows: 2fr 3fr;
+            grid-gap: 10px;
+        }
+
+        .row3 {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 10px;
+        }
+
+        .row3>div {
+            background-color: lightgrey;
+        }
+
+        .row4 {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 10px;
+        }
+
+        .column7 {
+            background-color: lightgrey;
+        }
+
+        .column6 {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .column6>div {
+            background-color: lightgrey;
+        }
+
+        .column2 {
+            background-color: lightgrey;
+        }
+
+        .column3 {
+            display: grid;
+            grid-template-rows: 3fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .column3>div {
+            background-color: lightgrey;
+        }
+
+        p {
+            color: white;
+            margin-top: 17px;
+            margin-left: 17px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="entry">
+        <div class="maindiv">
+            <div class="column1">
+                <div class="row3">
+                    <div class="column4"><p>A</p></div>
+                    <div class="column5"><p>B</p></div>
+                </div>
+                <div class="row4">
+                    <div class="column6">
+                        <div class="row5"><p>C</p></div>
+                        <div class="row6"><p>D</p></div>
+                    </div>
+                    <div class="column7"><p>E</p></div>
+                </div>
+            </div>
+            <div class="column2"><p>F</p></div>
+            <div class="column3">
+                <div class="row1"><p>G</p></div>
+                <div class="row2"><p>H</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
